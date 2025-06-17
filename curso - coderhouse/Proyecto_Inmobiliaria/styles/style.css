@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    margin: 0 .8vw;
+    padding: 20px;
+    text-align: center;
+    /* border-bottom: 1px solid #2c3e50; */
+}
+
+header li {
+    display: inline;
+    margin: 0 15px;
+
+}
+
+header li a {
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.main-img {
+    /* necesitamos que la imagen ocupe el 100% del ancho de la pantalla pero que no se vaya tanto para abajo, sin perder la calidad  de la imagen */
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1vw auto;
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    translate: y(-5px);
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+
+/* Contenedores de imagen */
+.img-placeholder {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    width: 100%;
+}
+
+.img-small {
+    height: 91px;
+}
+
+.img-medium {
+    height: 150px;
+}
+
+.img-large {
+    height: 200px;
+}
+
+/* Íconos de equipo */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
