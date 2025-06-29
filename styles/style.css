@@ -194,6 +194,99 @@ body {
     transform: scale(1.03);
 }
 
+/* Reseñas */
+.testimonios-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.testimonio-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    transition: all 0.3s ease;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonio-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimonio-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+.testimonio-cliente {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.testimonio-fecha {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.testimonio-texto {
+    font-style: italic;
+    color: #495057;
+    margin-bottom: 1.5rem;
+}
+
+.testimonio-estrellas {
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.testimonio-propiedad {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.rating-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+}
+
+.star-rating input[type=radio] {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    font-size: 2rem;
+    padding: 0 0.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.star-rating input[type=radio]:checked~label,
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: #ffc107;
+}
+
 /* Media Queries */
 @media (max-width: 992px) {
     .hero-content h1 {
@@ -222,5 +315,16 @@ body {
 
     .grid-galeria img {
         height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonio-card {
+        padding: 1.5rem;
+    }
+
+    .testimonio-avatar {
+        width: 50px;
+        height: 50px;
     }
 }
